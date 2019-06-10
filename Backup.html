@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vickey's Flower Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+</head>
+<body>
+<!--------Navigation bar/Manu------------->
+
+	<div class="navbar" id="myNav">
+		<a class="pg1"><img src="img/logo.png" /></a>
+		<a href="#home">HOME</a>
+		<a href="#about us">ABOUT US</a>
+		<a href="#about us">OCCASIONS</a>
+		<a href="#about us">ORDER</a>
+		<a href="#total amount" style="margin-left: 40%"> TOTAL AMOUNT:</a>
+		<div id="droppable" class="ui-widget-header"><a class="pg2" href="#cart"><img src="img/cart.png"></a></div>
+		<a href="#javascript:void(0);" class="icon" onclick="myfunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+	</div>
+<!---------Product Container--------------------> 	
+	<div class="container">
+		<h1>Top Products</h1>
+		<p class="p1">To add desired products to the cart, simply drag a product image to the cart icon found at the top right of the page.</p>
+		
+<!------------Images of products----------------->
+
+<div class="row">
+	<div class="column" id="sunflower">
+		<img  id="product-1" data-price="2.00" src="img/flower-1.png" alt="Sunflower">
+		<figcaption>Sunflower Melody</figcaption>
+		<header class="amount">$30.00</header>
+		<select><img src="img/path-2.png">
+			<option>1</option>
+			<option>12</option>
+			<option>10</option>
+			<option>11</option>
+			<option>6</option>
+			<option>4</option>
+			<option>19</option>
+			<option>14</option>
+		</select>
+	</div>
+	<div class="column">
+		<img id="product-1" data-price="2.00" class="spring" src="img/flower-2.png" alt="spring mix">
+		<figcaption>Spring Mix</figcaption>
+		<header class="amount">$30.00</header>
+		<select><img src="img/path-2.png">
+			<option>1</option>
+			<option>12</option>
+			<option>10</option>
+			<option>11</option>
+			<option>6</option>
+			<option>4</option>
+			<option>19</option>
+			<option>14</option>
+		</select>
+	</div>
+	<div class="column">
+		<img id="product-1" data-price="30.00" src="img/flower-3.png" alt="Colorful Arrangement">
+		<figcaption>Colorful Arrangement</figcaption>
+		<header class="amount">$30.00</header>
+		<select><img src="img/path-2.png">
+			<option>1</option>
+			<option>12</option>
+			<option>10</option>
+			<option>11</option>
+			<option>6</option>
+			<option>4</option>
+			<option>19</option>
+			<option>14</option>
+		</select>
+	</div>
+	<div class="column">
+		<img id="product-1" data-price="2.00" src="img/flower-4.png" alt="Tulip Season">
+		<figcaption>Tulip Season</figcaption>
+		<header class="amount">$30.00</header>
+		<select><img src="img/path-2.png"></select>
+	</div>
+	
+</div>
+
+</div>
+
+<!----------Bottom COntainer-------->	
+<div class="bottom">
+
+	<div class="columns">
+		<h3>GET TO KNOW US</h3>
+		<a class="links" href="#about us">About Us</a>
+		<br>
+		<a class="links" href="#about us">Careers</a>
+		<br>
+		<a class="links" href="#about us">Media</a>
+		<br>
+		<a class="links" href="#about us">Security & Privacy</a>
+
+		
+	</div>
+
+	<div class="columns">
+		<h3>LEARN MORE ABOUT</h3>
+		<a class="links" href="#about us">Blog</a>
+		<br>
+		<a class="links" href="#about us">Fins a Florist</a>
+		<br>
+		<a class="links" href="#about us">Floral Tips & Inspiration</a>
+		<br>
+		<a class="links" href="#about us">Sitemap</a>
+	</div>
+
+	<div class="columns">
+		<h3>SHOP VICKY'S</h3>
+		<a class="links" href="#about us">Same-Day Flower Delivery</a>
+		<br>
+		<a class="links" href="#about us">Birthday Flowers</a>
+		<br>
+		<a class="links" href="#about us">Funeral & Sympathy Flowers</a>
+		<br>
+		<a class="links" href="#about us">International Flower Delivery</a>
+	</div>
+		
+
+</div>
+
+
+<!-------------------Script------------------->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+
+</script>
+
+</body>
+</html>
